@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica
+}
+.messages {
+    padding: 1rem .9rem;
+}
+a {
+    text-decoration: underline;
+    color: #0076FF;
+}
+span {
+    font-size: 1.125rem;
+    padding-left: .5rem;
+}
+.bubble {
+    background: rgba(206,206,206,0.50);
+    margin: 5px;
+    padding: .5rem;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+.text-container {
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    bottom: 0;
+    background: #eee;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: .2rem;
+    text-align: center;
+}
+.text-input-box {
+    outline: none;
+    width: 80vw;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.send-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #0076FF;
+    font-size: 1rem;
+    width: 10vw;
+}
+.heart {
+    bottom: 60px;
+    right: .5rem;
+    position: fixed;
+    width: 11%;
+    height: 3.75rem;
+    display: none;
+}
+.hex-icon-heart path { transform-origin: 21px 25px; -webkit-transform-origin: 21px 25px;
+animation: hex-icon-heart-beat 1s linear infinite;
+-webkit-animation: hex-icon-heart-beat 1s linear infinite;
+}
+@keyframes hex-icon-heart-beat { 0% { transform: scale3d(1, 1, 1); } 30% { transform: scale3d(0.75, 0.75, 1); } 60% { transform: scale3d(1, 1, 1); } }
+@-webkit-keyframes hex-icon-heart-beat { 0% { -webkit-transform: scale3d(1, 1, 1); } 30% { -webkit-transform: scale3d(0.75, 0.75, 1); } 60% { -webkit-transform: scale3d(1, 1, 1); } }
